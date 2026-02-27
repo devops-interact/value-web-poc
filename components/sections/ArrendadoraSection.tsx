@@ -31,7 +31,7 @@ const fleet = [
         model: 'Plataformas de Elevación',
         type: 'Maquinaria',
         features: ['Altura 15m', 'Motor Eléctrico', 'Mantenimiento Incluido'],
-        image: 'https://images.unsplash.com/photo-1581404476143-fb31d742929f?q=80&w=2670&auto=format&fit=crop', // Genie lifts
+        image: '/images/genie.png', // Genie lifts
         price: 'Cotizar',
     }
 ]
