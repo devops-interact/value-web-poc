@@ -1,7 +1,6 @@
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import HeroSection from '@/components/sections/HeroSection'
-import TickerBand from '@/components/sections/TickerBand'
 import QuienesSomosSection from '@/components/sections/QuienesSomosSection'
 import EmpresasSection from '@/components/sections/EmpresasSection'
 import StatsSection from '@/components/sections/StatsSection'
@@ -13,7 +12,6 @@ export default function HomePage() {
             <Navbar />
             <main id="main-content">
                 <HeroSection />
-                <TickerBand />
                 <QuienesSomosSection />
                 <EmpresasSection />
                 <StatsSection />
