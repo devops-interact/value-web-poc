@@ -65,7 +65,7 @@ export default function AccesoSection() {
                             target="_blank"
                             rel="noopener noreferrer"
                             variants={fadeInUp}
-                            className="group relative flex flex-col justify-between p-8 rounded bg-charcoal border border-white/6 hover:border-teal/40 transition-all duration-400 overflow-hidden aspect-[16/7]"
+                            className="group relative flex flex-col justify-between p-8 pb-6 rounded bg-charcoal border border-white/6 hover:border-teal/40 transition-all duration-400 overflow-hidden h-fit"
                             aria-label={`Ir a ${link.title}`}
                         >
                             {/* Hover gradient bg */}
