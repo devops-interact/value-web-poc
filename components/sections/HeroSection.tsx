@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import Monogram from '@/components/icons/Monogram'
@@ -11,8 +10,6 @@ const headline = 'Tu patrimonio, nuestra experiencia.'
 const words = headline.split(' ')
 
 export default function HeroSection() {
-    const [hovered, setHovered] = useState(false)
-
     return (
         <section
             id="inicio"
@@ -26,21 +23,13 @@ export default function HeroSection() {
                 <motion.div
                     animate={{ rotate: 360 }}
                     transition={{ duration: 80, repeat: Infinity, ease: 'linear' }}
-                    className="-mr-24 lg:-mr-8 pointer-events-auto cursor-pointer"
-                    style={{ opacity: hovered ? 0.28 : 0.14 }}
-                    onMouseEnter={() => setHovered(true)}
-                    onMouseLeave={() => setHovered(false)}
-                    whileHover={{ scale: 1.06 }}
+                    className="-mr-24 lg:-mr-8"
+                    style={{ opacity: 0.34 }}
                 >
-                    <motion.div
-                        animate={hovered ? { filter: 'drop-shadow(0 0 32px #08979C)' } : { filter: 'drop-shadow(0 0 0px #08979C)' }}
-                        transition={{ duration: 0.4 }}
-                    >
-                        <Monogram
-                            className="w-[520px] h-[520px] lg:w-[700px] lg:h-[700px]"
-                            color={hovered ? '#0FBEC5' : '#08979C'}
-                        />
-                    </motion.div>
+                    <Monogram
+                        className="w-[520px] h-[520px] lg:w-[700px] lg:h-[700px]"
+                        color="#08979C"
+                    />
                 </motion.div>
             </div>
 
