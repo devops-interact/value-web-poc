@@ -64,8 +64,8 @@ export default function QuienesSomosSection() {
                                 <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-graphite to-charcoal" />
                                 <div className="absolute inset-0 bg-gradient-to-tr from-teal/20 to-transparent" />
                                 <img
-                                    src="https://images.unsplash.com/photo-1556761175-5973dc0f32b7?q=80&w=1600&auto=format&fit=crop"
-                                    alt="Value Grupo Financiero — apretón de manos"
+                                    src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop"
+                                    alt="Value Grupo Financiero — ejecutivos estrechando manos"
                                     className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60"
                                 />
                                 {/* Counter overlay */}
