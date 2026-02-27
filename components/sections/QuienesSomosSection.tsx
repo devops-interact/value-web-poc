@@ -58,7 +58,7 @@ export default function QuienesSomosSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     {/* Image side */}
                     <RevealOnScroll direction="left">
-                        <div className="relative h-[480px] lg:h-[580px] rounded-3xl overflow-hidden">
+                        <div className="relative h-[480px] lg:h-[580px] rounded overflow-hidden">
                             <div className="clip-diagonal h-full w-full relative">
                                 {/* Placeholder image with teal overlay */}
                                 <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-graphite to-charcoal" />
@@ -106,8 +106,8 @@ export default function QuienesSomosSection() {
                         <div className="space-y-4 mb-10">
                             {values.map((v, i) => (
                                 <RevealOnScroll key={v.label} delay={0.35 + i * 0.1}>
-                                    <div className="flex items-start gap-4 p-4 rounded-2xl bg-charcoal/60 border border-white/5 hover:border-teal/20 transition-colors duration-300">
-                                        <div className="w-10 h-10 rounded-xl bg-teal/10 border border-teal/20 flex items-center justify-center flex-shrink-0">
+                                    <div className="flex items-start gap-4 p-4 rounded bg-charcoal/60 border border-white/5 hover:border-teal/20 transition-colors duration-300">
+                                        <div className="w-10 h-10 rounded bg-teal/10 border border-teal/20 flex items-center justify-center flex-shrink-0">
                                             <v.icon size={18} className="text-teal" />
                                         </div>
                                         <div>

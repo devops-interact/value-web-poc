@@ -71,10 +71,10 @@ export default function EmpresasSection() {
                         <motion.article
                             key={empresa.label}
                             variants={fadeInUp}
-                            className="group relative flex flex-col p-8 rounded-3xl bg-charcoal border border-white/5 hover:border-teal/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-teal-md"
+                            className="group relative flex flex-col p-8 rounded bg-charcoal border border-white/5 hover:border-teal/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-teal-md"
                         >
                             {/* Icon */}
-                            <div className="w-12 h-12 rounded-2xl bg-teal/10 border border-teal/20 flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-[-5deg]">
+                            <div className="w-12 h-12 rounded bg-teal/10 border border-teal/20 flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-[-5deg]">
                                 <empresa.icon size={22} className="text-teal transition-colors duration-300" />
                             </div>
 
@@ -99,7 +99,7 @@ export default function EmpresasSection() {
                             </a>
 
                             {/* Decorative gradient on hover */}
-                            <div className="absolute inset-0 rounded-3xl bg-gradient-teal-subtle opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                            <div className="absolute inset-0 rounded bg-gradient-teal-subtle opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                         </motion.article>
                     ))}
                 </motion.div>

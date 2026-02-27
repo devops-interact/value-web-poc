@@ -74,7 +74,7 @@ export default function StatsSection() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
                     {stats.map((stat, i) => (
                         <RevealOnScroll key={stat.label} delay={i * 0.12}>
-                            <div className="text-center p-8 rounded-3xl bg-charcoal/40 border border-white/6">
+                            <div className="text-center p-8 rounded bg-charcoal/40 border border-white/6">
                                 <StatCounter value={stat.value} suffix={stat.suffix} />
                                 <p className="text-white font-medium mt-4 mb-1">{stat.label}</p>
                                 <p className="text-ash text-sm font-mono">{stat.sublabel}</p>

@@ -65,15 +65,15 @@ export default function AccesoSection() {
                             target="_blank"
                             rel="noopener noreferrer"
                             variants={fadeInUp}
-                            className="group relative flex flex-col justify-between p-8 rounded-3xl bg-charcoal border border-white/6 hover:border-teal/40 transition-all duration-400 overflow-hidden aspect-[16/7]"
+                            className="group relative flex flex-col justify-between p-8 rounded bg-charcoal border border-white/6 hover:border-teal/40 transition-all duration-400 overflow-hidden aspect-[16/7]"
                             aria-label={`Ir a ${link.title}`}
                         >
                             {/* Hover gradient bg */}
-                            <div className="absolute inset-0 bg-gradient-teal opacity-0 group-hover:opacity-[0.08] transition-opacity duration-400 rounded-3xl" />
+                            <div className="absolute inset-0 bg-gradient-teal opacity-0 group-hover:opacity-[0.08] transition-opacity duration-400 rounded" />
 
                             {/* Content */}
                             <div className="relative z-10">
-                                <span className="inline-block px-3 py-1 rounded-full bg-teal/10 border border-teal/20 text-teal text-xs font-mono tracking-wider mb-4">
+                                <span className="inline-block px-3 py-1 rounded border border-teal/20 bg-teal/10 text-teal text-xs font-mono tracking-wider mb-4">
                                     {link.tag}
                                 </span>
                                 <h3 className="font-serif text-white text-2xl mb-2 group-hover:text-teal transition-colors duration-300">
