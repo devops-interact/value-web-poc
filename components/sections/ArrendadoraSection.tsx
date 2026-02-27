@@ -123,7 +123,7 @@ export default function ArrendadoraSection() {
                                     </ul>
                                 </div>
 
-                                <Button variant="outline" className="w-full justify-between group/btn">
+                                <Button variant="ghost" className="w-full justify-between group/btn">
                                     {item.price}
                                     <ArrowUpRight size={16} className="transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
                                 </Button>
