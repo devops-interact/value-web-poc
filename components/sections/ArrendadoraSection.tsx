@@ -26,12 +26,12 @@ const fleet = [
         price: 'Cotizar',
     },
     {
-        id: 'flotilla-comercial',
-        name: 'Flotilla Comercial',
-        model: 'Toyota Hiace 2024',
-        type: 'Utilitario',
-        features: ['Capacidad 15 Pasajeros', 'Motor Diésel', 'Mantenimiento Incluido'],
-        image: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=2671&auto=format&fit=crop', // Realistic placeholder for now
+        id: 'equipo-industrial',
+        name: 'Equipo Industrial',
+        model: 'Plataformas de Elevación',
+        type: 'Maquinaria',
+        features: ['Altura 15m', 'Motor Eléctrico', 'Mantenimiento Incluido'],
+        image: 'https://images.unsplash.com/photo-1581404476143-fb31d742929f?q=80&w=2670&auto=format&fit=crop', // Genie lifts
         price: 'Cotizar',
     }
 ]
