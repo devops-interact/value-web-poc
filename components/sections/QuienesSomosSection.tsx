@@ -64,8 +64,8 @@ export default function QuienesSomosSection() {
                                 <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-graphite to-charcoal" />
                                 <div className="absolute inset-0 bg-gradient-to-tr from-teal/20 to-transparent" />
                                 <img
-                                    src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80"
-                                    alt="Value Grupo Financiero — equipo de profesionales"
+                                    src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1600&auto=format&fit=crop"
+                                    alt="Value Grupo Financiero — glass ceiling architecture"
                                     className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60"
                                 />
                                 {/* Counter overlay */}
