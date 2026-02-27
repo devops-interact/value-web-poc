@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import Monogram from '@/components/icons/Monogram'
 import Button from '@/components/ui/Button'
-import TickerTape from '@/components/ui/TickerTape'
 import { wordContainer, wordVariant, fadeInUp, staggerContainer } from '@/lib/animations'
 
 const headline = 'Tu patrimonio, nuestra experiencia.'
@@ -100,23 +99,6 @@ export default function HeroSection() {
                 </motion.div>
             </div>
 
-            {/* Scroll hint — centered */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.6, duration: 0.6 }}
-                className="absolute bottom-8 lg:bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10"
-            >
-                <span className="text-ash text-xs font-mono tracking-widest">SCROLL</span>
-                <motion.div
-                    animate={{ y: [0, 8, 0] }}
-                    transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
-                    className="w-px h-8 bg-gradient-to-b from-teal to-transparent"
-                />
-            </motion.div>
-
-            {/* Ticker Tape */}
-            <TickerTape />
         </section>
     )
 }
