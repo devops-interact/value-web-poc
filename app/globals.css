@@ -3,33 +3,35 @@
 @tailwind utilities;
 
 /* ── Google Fonts ─────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300..600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* ── CSS Custom Properties ───────────────────────── */
 :root {
   /* Brand Core */
-  --color-teal:        #08979C;
-  --color-teal-light:  #0FBEC5;
-  --color-teal-dark:   #056B6E;
-  --color-teal-muted:  #E6F7F7;
+  --color-teal: #08979C;
+  --color-teal-light: #0FBEC5;
+  --color-teal-dark: #056B6E;
+  --color-teal-muted: #E6F7F7;
 
   /* Neutrals */
-  --color-black:       #0A0A0A;
-  --color-ink:         #111111;
-  --color-charcoal:    #1C1C1E;
-  --color-graphite:    #3A3A3C;
-  --color-ash:         #6E6E73;
-  --color-smoke:       #F2F2F7;
-  --color-white:       #FFFFFF;
+  --color-black: #0A0A0A;
+  --color-ink: #111111;
+  --color-charcoal: #1C1C1E;
+  --color-graphite: #3A3A3C;
+  --color-ash: #6E6E73;
+  --color-smoke: #F2F2F7;
+  --color-white: #FFFFFF;
 
   /* Semantic */
-  --color-accent:      #08979C;
-  --color-success:     #34C759;
-  --color-danger:      #FF3B30;
+  --color-accent: #08979C;
+  --color-success: #34C759;
+  --color-danger: #FF3B30;
 }
 
 /* ── Base Reset ──────────────────────────────────── */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -73,6 +75,7 @@ body {
   font-weight: 600;
   transition: top 0.2s;
 }
+
 .skip-to-content:focus {
   top: 0;
 }
@@ -81,13 +84,16 @@ body {
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--color-charcoal);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--color-teal);
   border-radius: 3px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-teal-light);
 }
@@ -97,6 +103,7 @@ body {
   position: relative;
   isolation: isolate;
 }
+
 .grain-overlay::before {
   content: '';
   position: absolute;
@@ -109,7 +116,10 @@ body {
 
 /* ── Reduced motion ──────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
-  *, ::before, ::after {
+
+  *,
+  ::before,
+  ::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -140,9 +150,11 @@ body {
   overflow: hidden;
   white-space: nowrap;
 }
+
 .ticker-wrapper:hover .ticker-track {
   animation-play-state: paused;
 }
+
 .ticker-track {
   display: flex;
   white-space: nowrap;
@@ -150,6 +162,11 @@ body {
 }
 
 @keyframes ticker-scroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }

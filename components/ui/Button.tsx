@@ -21,7 +21,7 @@ export default function Button({
     ...props
 }: ButtonProps) {
     const base =
-        'inline-flex items-center gap-2 font-sans font-medium rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-teal focus-visible:outline-offset-4'
+        'inline-flex items-center gap-2 font-sans font-medium rounded transition-all duration-300 focus-visible:outline-2 focus-visible:outline-teal focus-visible:outline-offset-4'
 
     const sizes = {
         sm: 'px-4 py-2 text-sm',

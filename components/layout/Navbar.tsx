@@ -45,7 +45,7 @@ export default function Navbar() {
             >
                 <nav
                     className={cn(
-                        'w-full max-w-5xl flex items-center justify-between px-6 rounded-full transition-all duration-500',
+                        'w-full max-w-5xl flex items-center justify-between px-6 rounded transition-all duration-500',
                         scrolled
                             ? 'py-3 bg-black/80 backdrop-blur-xl border border-white/10 shadow-2xl'
                             : 'py-4 bg-black/40 backdrop-blur-lg border border-white/6'
@@ -76,7 +76,7 @@ export default function Navbar() {
                     <div className="hidden lg:block relative">
                         <button
                             onClick={() => setAccesoOpen((v) => !v)}
-                            className="flex items-center gap-1.5 px-5 py-2 rounded-full border border-teal text-teal text-sm font-medium hover:bg-teal/10 transition-all duration-200"
+                            className="flex items-center gap-1.5 px-5 py-2 rounded border border-teal text-teal text-sm font-medium hover:bg-teal/10 transition-all duration-200"
                             aria-expanded={accesoOpen}
                             aria-haspopup="true"
                         >
@@ -94,7 +94,7 @@ export default function Navbar() {
                                     animate={{ opacity: 1, y: 0, scale: 1 }}
                                     exit={{ opacity: 0, y: 8, scale: 0.96 }}
                                     transition={{ duration: 0.18 }}
-                                    className="absolute right-0 mt-2 w-56 bg-charcoal border border-white/10 rounded-2xl overflow-hidden shadow-2xl"
+                                    className="absolute right-0 mt-2 w-56 bg-charcoal border border-white/10 rounded overflow-hidden shadow-2xl"
                                 >
                                     {accesoLinks.map((link) => (
                                         <a
@@ -167,7 +167,7 @@ export default function Navbar() {
                                             <a
                                                 href={link.href}
                                                 onClick={() => setMobileOpen(false)}
-                                                className="block px-4 py-3 text-white/70 hover:text-white hover:bg-white/5 rounded-xl transition-colors text-sm font-medium"
+                                                className="block px-4 py-3 text-white/70 hover:text-white hover:bg-white/5 rounded transition-colors text-sm font-medium"
                                             >
                                                 {link.label}
                                             </a>
@@ -184,7 +184,7 @@ export default function Navbar() {
                                         href={link.href}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center justify-between px-4 py-3 rounded-xl bg-teal/10 border border-teal/20 text-teal text-sm font-medium hover:bg-teal/20 transition-colors"
+                                        className="flex items-center justify-between px-4 py-3 rounded bg-teal/10 border border-teal/20 text-teal text-sm font-medium hover:bg-teal/20 transition-colors"
                                         onClick={() => setMobileOpen(false)}
                                     >
                                         {link.label}
