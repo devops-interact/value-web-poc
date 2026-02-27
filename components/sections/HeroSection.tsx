@@ -54,7 +54,7 @@ export default function HeroSection() {
                     variants={staggerContainer}
                     initial="hidden"
                     animate="visible"
-                    className="w-full lg:w-[60%]"
+                    className="w-full lg:max-w-[60%]"
                 >
                     {/* Badge */}
                     <motion.div variants={fadeInUp} className="mb-8">
@@ -86,7 +86,7 @@ export default function HeroSection() {
                     {/* Subheadline */}
                     <motion.p
                         variants={fadeInUp}
-                        className="text-ash text-body-lg max-w-sm mb-10 leading-relaxed"
+                        className="text-ash text-body-lg mb-10 leading-relaxed pr-4 lg:pr-8"
                     >
                         30 años de trayectoria en los mercados financieros mexicanos. Casa de Bolsa, Fondos de Inversión y Arrendadora al servicio de tu patrimonio.
                     </motion.p>
