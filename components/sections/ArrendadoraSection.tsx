@@ -13,7 +13,7 @@ const fleet = [
         model: 'Range Rover Velar 2024',
         type: 'Ejecutivo',
         features: ['Híbrido MHEV', 'Asientos de Piel', 'Asistente de Carril'],
-        image: 'https://images.unsplash.com/photo-1606152421802-db97b9c7a11b?q=80&w=2674&auto=format&fit=crop', // Realistic placeholder for now
+        image: 'https://images.unsplash.com/photo-1609521263047-f8f205293f24?q=80&w=2670&auto=format&fit=crop', // Dark Range Rover Velar style
         price: 'Cotizar',
     },
     {
@@ -88,45 +88,45 @@ export default function ArrendadoraSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: i * 0.1, ease: [0.21, 0.47, 0.32, 0.98] }}
                             viewport={{ once: true }}
-                            className="group relative flex flex-col bg-black rounded border border-white/5 overflow-hidden transition-colors duration-500 hover:border-teal/30"
+                            className="group relative flex flex-col h-[560px] rounded border border-white/10 overflow-hidden transition-colors duration-500 hover:border-teal/50"
                         >
-                            {/* Image Container */}
-                            <div className="relative h-64 overflow-hidden bg-ash/10">
+                            {/* Background Image & Gradient */}
+                            <div className="absolute inset-0">
                                 <motion.img
                                     src={item.image}
                                     alt={item.model}
                                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                                 />
-                                <div className="absolute top-4 left-4">
-                                    <span className="px-2.5 py-1 bg-black/60 backdrop-blur-md rounded border border-white/10 text-white text-[10px] uppercase font-mono tracking-widest">
-                                        {item.type}
-                                    </span>
-                                </div>
-                                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/10" />
                             </div>
 
-                            {/* Content */}
-                            <div className="relative flex-1 p-8 flex flex-col justify-between -mt-12">
-                                <div>
-                                    <h3 className="font-mono font-light text-white text-2xl mb-1 group-hover:text-teal transition-colors">
-                                        {item.name}
-                                    </h3>
-                                    <p className="text-ash/80 text-sm font-mono mb-6">{item.model}</p>
+                            {/* Top Badge */}
+                            <div className="absolute top-6 left-6 z-10">
+                                <span className="inline-block px-3 py-1.5 bg-white/10 backdrop-blur-md rounded border border-white/10 text-white text-xs uppercase font-mono tracking-widest leading-none">
+                                    {item.type}
+                                </span>
+                            </div>
 
-                                    <ul className="space-y-3 mb-8">
-                                        {item.features.map((feature, idx) => (
-                                            <li key={idx} className="flex items-center gap-3 text-sm text-ash">
-                                                <div className="w-1.5 h-1.5 rounded-full bg-teal/40" />
-                                                {feature}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
+                            {/* Content bottom-aligned */}
+                            <div className="relative z-10 p-8 flex flex-col h-full justify-end">
+                                <h3 className="font-mono font-light text-teal text-4xl mb-2 mt-auto">
+                                    {item.name}
+                                </h3>
+                                <p className="text-ash/90 text-sm font-mono mb-8">{item.model}</p>
 
-                                <Button variant="ghost" className="w-full justify-between group/btn">
+                                <ul className="space-y-4 mb-10">
+                                    {item.features.map((feature, idx) => (
+                                        <li key={idx} className="flex items-center gap-3 text-base text-ash font-mono">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-teal" />
+                                            {feature}
+                                        </li>
+                                    ))}
+                                </ul>
+
+                                <a href="#cotizar" className="flex items-center justify-between w-full px-6 py-3.5 rounded border border-teal text-teal font-mono text-lg transition-colors hover:bg-teal/10 group/btn">
                                     {item.price}
-                                    <ArrowUpRight size={16} className="transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
-                                </Button>
+                                    <ArrowUpRight size={20} className="transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
+                                </a>
                             </div>
                         </motion.div>
                     ))}
