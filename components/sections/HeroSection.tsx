@@ -1,33 +1,51 @@
 'use client'
 
-import dynamic from 'next/dynamic'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
+import Monogram from '@/components/icons/Monogram'
 import Button from '@/components/ui/Button'
 import { wordContainer, wordVariant, fadeInUp, staggerContainer } from '@/lib/animations'
-
-const GlassObject = dynamic(() => import('@/components/ui/GlassObject'), { ssr: false })
 
 const headline = 'Tu patrimonio, nuestra experiencia.'
 const words = headline.split(' ')
 
 export default function HeroSection() {
+    const [hovered, setHovered] = useState(false)
+
     return (
         <section
             id="inicio"
             className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-black"
             aria-label="Hero — Value Grupo Financiero"
         >
-            {/* 3D Glass Object — desktop right side */}
-            <div className="absolute inset-0 pointer-events-none z-20 hidden lg:flex items-center justify-end">
-                <div className="w-[48%] h-[90%] pointer-events-auto pr-4">
-                    <GlassObject />
-                </div>
+            {/* Background monogram — brighter, interactive */}
+            <div
+                className="absolute inset-0 flex items-center justify-end pointer-events-none select-none overflow-hidden"
+            >
+                <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 80, repeat: Infinity, ease: 'linear' }}
+                    className="-mr-24 lg:-mr-8 pointer-events-auto cursor-pointer"
+                    style={{ opacity: hovered ? 0.28 : 0.14 }}
+                    onMouseEnter={() => setHovered(true)}
+                    onMouseLeave={() => setHovered(false)}
+                    whileHover={{ scale: 1.06 }}
+                >
+                    <motion.div
+                        animate={hovered ? { filter: 'drop-shadow(0 0 32px #08979C)' } : { filter: 'drop-shadow(0 0 0px #08979C)' }}
+                        transition={{ duration: 0.4 }}
+                    >
+                        <Monogram
+                            className="w-[520px] h-[520px] lg:w-[700px] lg:h-[700px]"
+                            color={hovered ? '#0FBEC5' : '#08979C'}
+                        />
+                    </motion.div>
+                </motion.div>
             </div>
 
             {/* Gradient overlays */}
-            <div className="absolute inset-0 bg-gradient-to-br from-black via-black/95 to-transparent pointer-events-none" />
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent pointer-events-none lg:w-3/5 lg:via-black/70" />
+            <div className="absolute inset-0 bg-gradient-to-br from-black via-black/90 to-transparent pointer-events-none" />
             <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent pointer-events-none" />
 
             {/* Content */}
@@ -78,21 +96,10 @@ export default function HeroSection() {
                         variants={fadeInUp}
                         className="flex flex-wrap items-center gap-4"
                     >
-                        <Button
-                            as="a"
-                            href="#acceso"
-                            variant="primary"
-                            size="lg"
-                        >
+                        <Button as="a" href="#acceso" variant="primary" size="lg">
                             Acceder a mi cuenta
                         </Button>
-                        <Button
-                            as="a"
-                            href="#empresas"
-                            variant="ghost"
-                            size="lg"
-                            className="group"
-                        >
+                        <Button as="a" href="#empresas" variant="ghost" size="lg" className="group">
                             Conoce nuestros servicios
                             <ArrowUpRight
                                 size={16}

@@ -19,7 +19,7 @@ const config: Config = {
       },
       fontFamily: {
         serif: ['Instrument Serif', 'Georgia', 'serif'],
-        sans: ['DM Sans', 'sans-serif'],
+        sans: ['JetBrains Mono', 'monospace'],
         mono: ['JetBrains Mono', 'monospace'],
       },
       fontSize: {

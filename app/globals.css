@@ -46,7 +46,7 @@ html {
 body {
   background-color: var(--color-black);
   color: var(--color-white);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   cursor: none;
 }
 
