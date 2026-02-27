@@ -39,7 +39,7 @@ export default function HeroSection() {
             <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent pointer-events-none" />
 
             {/* Content */}
-            <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-24 w-full">
+            <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12 lg:pt-36 lg:pb-24 w-full h-full flex flex-col justify-center">
                 <motion.div
                     variants={staggerContainer}
                     initial="hidden"
@@ -105,7 +105,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.6, duration: 0.6 }}
-                className="absolute bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10"
+                className="absolute bottom-8 lg:bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10"
             >
                 <span className="text-ash text-xs font-mono tracking-widest">SCROLL</span>
                 <motion.div
