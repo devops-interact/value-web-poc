@@ -18,7 +18,7 @@ const config: Config = {
         ink: '#111111',
       },
       fontFamily: {
-        serif: ['Instrument Serif', 'Georgia', 'serif'],
+        serif: ['JetBrains Mono', 'monospace'],
         sans: ['JetBrains Mono', 'monospace'],
         mono: ['JetBrains Mono', 'monospace'],
       },

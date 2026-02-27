@@ -38,7 +38,7 @@ function StatCounter({ value, suffix }: { value: number; suffix: string }) {
     }, [value])
 
     return (
-        <div ref={ref} className="font-serif text-teal leading-none" style={{ fontSize: 'clamp(3.5rem, 7vw, 5.5rem)' }}>
+        <div ref={ref} className="font-mono font-light text-teal leading-none" style={{ fontSize: 'clamp(3.5rem, 7vw, 5.5rem)' }}>
             {count}{suffix}
         </div>
     )
@@ -63,7 +63,7 @@ export default function StatsSection() {
                     </RevealOnScroll>
                     <RevealOnScroll delay={0.1}>
                         <h2
-                            className="font-serif text-white mt-4 leading-[1.1] tracking-[-0.025em]"
+                            className="font-mono font-light text-white mt-4 leading-[1.1] tracking-[-0.025em]"
                             style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}
                         >
                             La confianza se construye con trayectoria

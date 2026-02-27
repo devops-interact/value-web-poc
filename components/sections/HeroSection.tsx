@@ -66,7 +66,7 @@ export default function HeroSection() {
 
                     {/* Headline — word stagger */}
                     <motion.h1
-                        className="font-serif text-white leading-[1.05] tracking-[-0.03em] mb-6"
+                        className="font-mono font-light text-white leading-[1.05] tracking-[-0.03em] mb-6"
                         style={{ fontSize: 'clamp(2.75rem, 5vw, 4.5rem)' }}
                         variants={wordContainer}
                         initial="hidden"

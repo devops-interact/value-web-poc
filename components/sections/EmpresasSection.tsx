@@ -46,7 +46,7 @@ export default function EmpresasSection() {
                     </RevealOnScroll>
                     <RevealOnScroll delay={0.1}>
                         <h2
-                            className="font-serif text-white leading-[1.1] tracking-[-0.025em]"
+                            className="font-mono font-light text-white leading-[1.1] tracking-[-0.025em]"
                             style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}
                         >
                             Tres empresas, una sola visión
@@ -79,7 +79,7 @@ export default function EmpresasSection() {
                             </div>
 
                             {/* Text */}
-                            <h3 className="font-serif text-white text-xl mb-3 tracking-[-0.01em] group-hover:text-teal transition-colors duration-300">
+                            <h3 className="font-mono font-light text-white text-xl mb-3 tracking-[-0.01em] group-hover:text-teal transition-colors duration-300">
                                 {empresa.label}
                             </h3>
                             <p className="text-ash text-sm leading-relaxed flex-1 mb-6">

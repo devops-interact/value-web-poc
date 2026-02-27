@@ -41,7 +41,7 @@ function CountUp({ target, suffix = '' }: { target: number; suffix?: string }) {
     }, [target])
 
     return (
-        <span ref={ref} className="font-serif text-[clamp(3rem,6vw,5rem)] text-teal leading-none">
+        <span ref={ref} className="font-mono font-light text-[clamp(3rem,6vw,5rem)] text-teal leading-none">
             {count}{suffix}
         </span>
     )
@@ -89,7 +89,7 @@ export default function QuienesSomosSection() {
 
                         <RevealOnScroll delay={0.2}>
                             <h2
-                                className="font-serif text-white mb-6 leading-[1.1] tracking-[-0.02em]"
+                                className="font-mono font-light text-white mb-6 leading-[1.1] tracking-[-0.02em]"
                                 style={{ fontSize: 'clamp(1.75rem, 3vw, 2.5rem)' }}
                             >
                                 Con más de 30 años de experiencia construyendo valor financiero

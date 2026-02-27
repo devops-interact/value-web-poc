@@ -37,7 +37,7 @@ export default function AccesoSection() {
                     </RevealOnScroll>
                     <RevealOnScroll delay={0.1}>
                         <h2
-                            className="font-serif text-white mt-4 leading-[1.1] tracking-[-0.025em]"
+                            className="font-mono font-light text-white mt-4 leading-[1.1] tracking-[-0.025em]"
                             style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}
                         >
                             Accede directamente a tu cuenta
@@ -76,7 +76,7 @@ export default function AccesoSection() {
                                 <span className="inline-block px-3 py-1 rounded border border-teal/20 bg-teal/10 text-teal text-xs font-mono tracking-wider mb-4">
                                     {link.tag}
                                 </span>
-                                <h3 className="font-serif text-white text-2xl mb-2 group-hover:text-teal transition-colors duration-300">
+                                <h3 className="font-mono font-light text-white text-2xl mb-2 group-hover:text-teal transition-colors duration-300">
                                     {link.title}
                                 </h3>
                                 <p className="text-ash text-sm leading-relaxed max-w-sm">
