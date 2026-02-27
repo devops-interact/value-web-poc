@@ -54,7 +54,7 @@ export default function HeroSection() {
                     variants={staggerContainer}
                     initial="hidden"
                     animate="visible"
-                    className="w-full lg:w-[60%] max-w-lg"
+                    className="w-full"
                 >
                     {/* Badge */}
                     <motion.div variants={fadeInUp} className="mb-8">
