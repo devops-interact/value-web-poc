@@ -21,15 +21,17 @@ export default function HeroSection() {
             <div
                 className="absolute inset-0 flex items-center justify-end pointer-events-none select-none overflow-hidden"
             >
-                <div
-                    className="-mr-24 lg:-mr-8 animate-spin-slow"
+                <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 120, repeat: Infinity, ease: 'linear' }}
+                    className="-mr-24 lg:-mr-8"
                     style={{ opacity: 0.34 }}
                 >
                     <Monogram
                         className="w-[520px] h-[520px] lg:w-[700px] lg:h-[700px]"
                         color="#08979C"
                     />
-                </div>
+                </motion.div>
             </div>
 
             {/* Gradient overlays */}
