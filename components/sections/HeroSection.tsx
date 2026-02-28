@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import Monogram from '@/components/icons/Monogram'
 import Button from '@/components/ui/Button'
+import TickerTape from '@/components/ui/TickerTape'
 import { wordContainer, wordVariant, fadeInUp, staggerContainer } from '@/lib/animations'
 
 const headline = 'Tu patrimonio, nuestra experiencia.'
@@ -99,6 +100,9 @@ export default function HeroSection() {
                 </motion.div>
             </div>
 
+
+            {/* Ticker Tape */}
+            <TickerTape />
         </section>
     )
 }
