@@ -13,7 +13,7 @@ const fleet = [
         model: 'Range Rover Velar 2024',
         type: 'Ejecutivo',
         features: ['Híbrido MHEV', 'Asientos de Piel', 'Asistente de Carril'],
-        image: 'https://images.unsplash.com/photo-1609521263047-f8f205293f24?q=80&w=2670&auto=format&fit=crop', // Dark Range Rover Velar style
+        image: '/images/rover.png', // Range Rover Velar 2024
         price: 'Cotizar',
     },
     {
@@ -22,7 +22,7 @@ const fleet = [
         model: 'BMW Serie 3 2024',
         type: 'Corporativo',
         features: ['Transmisión Automática', 'Navegación GPS', 'Conectividad Premium'],
-        image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=2670&auto=format&fit=crop', // Realistic placeholder for now
+        image: '/images/sedan.png', // BMW Serie 3 2024
         price: 'Cotizar',
     },
     {
