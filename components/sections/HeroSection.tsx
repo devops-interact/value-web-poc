@@ -23,7 +23,7 @@ export default function HeroSection() {
             >
                 <motion.div
                     animate={{ rotate: 360 }}
-                    transition={{ duration: 100, repeat: Infinity, ease: 'linear' }}
+                    transition={{ duration: 120, repeat: Infinity, ease: 'linear' }}
                     className="-mr-24 lg:-mr-8"
                     style={{ opacity: 0.34 }}
                 >
