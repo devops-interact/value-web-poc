@@ -31,8 +31,8 @@ const config: Config = {
         'label': ['0.75rem', { lineHeight: '1.5', letterSpacing: '0.08em' }],
       },
       animation: {
-        'marquee': 'marquee 40s linear infinite',
-        'marquee2': 'marquee2 40s linear infinite',
+        'marquee': 'marquee 60s linear infinite',
+        'marquee2': 'marquee2 60s linear infinite',
         'spin-slow': 'spin 120s linear infinite',
         'fade-up': 'fadeUp 0.6s ease forwards',
         'pulse-slow': 'pulse 4s ease-in-out infinite',
