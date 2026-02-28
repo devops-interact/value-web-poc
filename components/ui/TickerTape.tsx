@@ -20,7 +20,7 @@ export default function TickerTape() {
     const doubledIndices = [...indices, ...indices, ...indices]
 
     return (
-        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden border-t border-white/10 bg-black/60 backdrop-blur-md z-30">
+        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden border-t border-b border-white/10 bg-black/60 backdrop-blur-md z-30">
             <div className="flex w-max animate-marquee py-3">
                 {doubledIndices.map((item, idx) => (
                     <div
