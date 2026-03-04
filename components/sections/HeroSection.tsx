@@ -29,7 +29,6 @@ export default function HeroSection() {
                 >
                     <Monogram
                         className="w-[520px] h-[520px] lg:w-[700px] lg:h-[700px]"
-                        color="#08979C"
                     />
                 </motion.div>
             </div>
