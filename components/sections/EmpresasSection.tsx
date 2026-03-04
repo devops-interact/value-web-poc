@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { TrendingUp, PieChart, Building2, ArrowUpRight } from 'lucide-react'
+import { TrendingUp, PieChart, Car, ArrowUpRight } from 'lucide-react'
 import RevealOnScroll from '@/components/ui/RevealOnScroll'
 import { staggerContainer, fadeInUp } from '@/lib/animations'
 
@@ -21,7 +21,7 @@ const empresas = [
         href: '#',
     },
     {
-        icon: Building2,
+        icon: Car,
         label: 'Arrendadora',
         description:
             'Soluciones de arrendamiento financiero y puro para empresas. Optimiza tu flujo de caja y moderniza tu equipamiento con condiciones competitivas.',
